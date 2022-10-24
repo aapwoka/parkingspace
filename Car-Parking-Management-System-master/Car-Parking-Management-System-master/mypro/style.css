@@ -1,0 +1,243 @@
+*
+{
+    margin:0;
+    padding:0;
+    
+}
+.bikash
+{
+    height:100vh;
+    width:100%;
+    background-image:url(sky.jpg);
+    background-size:cover;
+    background-position: center;
+    position: :relative;
+    overflow-x: hidden;
+     
+}
+
+.highway
+{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url(road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    z-index:1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite; 
+    
+    
+}
+@keyframes highway
+{
+    100%{
+        transform: translateX(-3400px);
+         }
+}
+.city
+{
+    height: 250px;
+    width: 500%;
+    display: block;
+    background-image: url(city.png);
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right:0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+    
+}
+@keyframes city 
+{
+    100%{
+        transform: translateX(-1400px);
+        }
+}
+.car
+{
+    width: 400px;
+    left: 50%;
+    bottom:100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2 ;
+}
+.car img
+{
+    width: 100%;
+    animation: car 1s linear infinite;
+    
+}
+@keyframes car
+{
+    100%{
+        transform: translateY(-1px);
+        
+       }
+    50%{
+        transform: translateY(      1px);
+        }
+     0%{
+        transform: translateY(-1px);
+    
+      }
+}
+
+
+.wheel
+{
+    left: 50%;
+    bottom:178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    
+}
+
+.wheel img
+    {
+        width:72px;
+        height: 72px;
+        animation: wheel 1s linear infinite;
+    }
+.back-wheel
+    {
+        left: -165px;
+        position: absolute;
+        
+    }
+    
+.front-wheel
+    {
+        left: 80px;
+        position: absolute;
+        
+    }
+ @keyframes wheel
+    {
+        100%{
+            transform: rotate(360deg);
+           }
+    }
+    
+
+section
+{
+    height: 100vh;
+    
+}
+
+h1
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align:center;
+    color:black;
+    
+}
+
+
+
+
+.container
+{
+text-align: center;
+margin-top: 150px;
+}
+
+
+.btn
+{
+border: 1px solid #0000FF;
+background: none;
+padding: 10px 20px;
+font-size: 20px;
+font-family: "montserrat";
+cursor: pointer;
+margin: 10px;
+transition: 0.8s;
+position: relative;
+overflow: hidden;
+
+}
+
+.btn1,.btn2
+{
+color: #0000FF	;
+}
+
+.btn3,.btn4
+{
+color: #FF4500;
+}
+
+.btn1: new ,.btn4: about
+{
+color:#FF4500;
+}
+
+.btn3:,.btn4: about
+{
+color: #0000FF	;
+}
+    
+
+.btn::before
+{
+content: "";
+position: absolute;
+left: 0;
+width:100%;
+height: 0%;
+background: #3498db;
+z-index: -1;
+transition: 0.8s;
+}
+
+
+
+.btn1::before,.btn3::before
+{
+top:0;
+border-radius: 0 0 50% 50%;
+}
+
+.btn2::before,.btn4::before
+{
+bottom:0;
+border-radius: 50% 50% 0 0;
+}
+.btn3::before,.btn4::before
+{
+height:180%;
+}
+    
+.btn1:hover::before,.btn2:hover::before
+{
+height:180%;
+}
+
+.btn3:hover::before,.btn4:hover::before
+{
+height:0;
+}
+
+
+h2
+{
+    text-align: center;
+    padding:20px;
+}
+
+

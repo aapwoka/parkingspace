@@ -1,0 +1,36 @@
+body{
+margin:0;
+padding:0;
+background: url(img1.jpg);
+  background-size: cover;
+    position: center;
+    justify-content: center;
+    
+}
+
+
+.con1
+{
+text-align: center;
+margin-top: 150px;
+}
+
+
+.btn
+{
+border: 1px solid #0000FF;
+background: none;
+padding: 10px 20px;
+font-size: 20px;
+font-family: "montserrat";
+cursor: pointer;
+margin: 10px;
+transition: 0.8s;
+position: relative;
+overflow: hidden;
+    top: 100px;
+    margin-bottom: -20px;
+    
+
+}
+
